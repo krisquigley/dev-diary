@@ -1,11 +1,9 @@
 ---
 title: Polling for File Generation
-subtitle: ...from a worker
 intro: I myself, often forget how to do all the Ajax trickery in Rails and Google isn't always the most helpful resource for me in this area.  Therefore, I thought I'd share my process with you and also leave a reminder for myself when I forget how to do it again.
 date: 2015-12-08
-tags: rails, ruby, background-worker
+tags: rails, ruby, background worker
 type: Article
-published: true
 project: Rails
 ---
 

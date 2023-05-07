@@ -1,11 +1,9 @@
 ---
 title: Replacing the asset pipeline with Webpack 2 in Rails
-subtitle: Why replace the asset pipeline?
 intro: Don't get me wrong, I think the asset pipeline is great, it allows you to get a web app up and running in no time with zero configuration.  However, when you want to make the move away from coffeescript to using pure ES6 and other JS libraries such as React, things start to get a little more difficult.
 date: 2017-02-17
 tags: rails, ruby, webpack, asset pipeline, sprockets
 type: Article
-published: true
 project: Rails
 ---
 

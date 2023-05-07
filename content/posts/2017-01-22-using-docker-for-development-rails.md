@@ -1,11 +1,9 @@
 ---
 title: Using Docker For Development with Ruby on Rails
-subtitle: A Three Part Series
 intro: In the first part of this series, I am going to be talking about how to setup Docker for your development environment.  In part two, I shall be discussing how to prepare Docker for production and finally, part three will look at how to automate deployment.
 date: 2017-01-22
-tags: rails, ruby, docker, docker-compose
+tags: rails, ruby, docker
 type: Article
-published: true
 project: Rails
 ---
 
