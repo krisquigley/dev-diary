@@ -22,7 +22,7 @@ def posts():
     return render_template("posts/index.html", posts=pages)
 
 
-@app.route("/posts/<year>/<month>/<day>/<name>.html")
+@app.route("/<year>/<month>/<day>/<name>.html")
 def post(year, month, day, name):
     path = f"{POST_DIR}/{year}-{month}-{day}-{name}"
     content = flatpages.get_or_404(path)
