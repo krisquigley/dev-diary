@@ -19,19 +19,19 @@ app.config.from_object(__name__)
 def posts():
     pages = [p for p in flatpages if p.path.startswith(POST_DIR)]
     pages.sort(key=lambda item: item["date"], reverse=True)
-    return render_template("posts/index.html.j2", posts=pages)
+    return render_template("posts/index.html", posts=pages)
 
 
 @app.route("/posts/<year>/<month>/<day>/<name>.html")
 def post(year, month, day, name):
     path = f"{POST_DIR}/{year}-{month}-{day}-{name}"
     content = flatpages.get_or_404(path)
-    return render_template("posts/show.html.j2", post=content, name=name)
+    return render_template("posts/show.html", post=content, name=name)
 
 
-@app.route("/about")
+@app.route("/about.html")
 def about():
-    return render_template("about.html.j2")
+    return render_template("about.html")
 
 
 @app.route("/pygments.css")
