@@ -17,6 +17,5 @@ importlib-metadata = "*"
 python_version = "3.8"
 
 [scripts]
-dev = 'python main.py'
-assets = 'cd static && yarn dev'
-build = 'python main.py build'
+dev = 'honcho start'
+build = 'bash -c "yarn --cwd static/ install && yarn --cwd static/ build && python main.py build"'
