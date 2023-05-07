@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{ url_for('pygments_css') }}" />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='node_modules/flowbite-typography/dist/typography.min.css')}}"
+      href="{{ url_for('static', filename='src/flowbite-typography/dist/typography.min.css')}}"
     />
     {% endblock %}
   </head>
@@ -28,6 +28,6 @@
         {% block content %}{% endblock %}
       </div>
     </main>
-    <script src="{{url_for('static',filename='node_modules/flowbite/dist/flowbite.min.js')}}"></script>
+    <script src="{{url_for('static',filename='src/flowbite/dist/flowbite.min.js')}}"></script>
   </body>
 </html>
