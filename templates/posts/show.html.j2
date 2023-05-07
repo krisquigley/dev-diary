@@ -1,0 +1,39 @@
+{% extends 'layouts/application.html.j2' %}
+{% block title %}{{ super() }} - {{ post.type }} {% endblock %}
+{% block content %}
+<article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+  <header class="mb-4 lg:mb-6 not-format">
+    <address class="flex items-center mb-6 not-italic">
+      <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+        <div>
+          <p class="text-base font-light text-gray-500 dark:text-gray-400"><time pubdate datetime="{{ post.date }}"
+              title="{{ post.date }}">{{ post.date.strftime('%b. %-d, %Y') }}</time></p>
+        </div>
+      </div>
+    </address>
+    <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">{{
+      post.title }}</h1>
+  </header>
+  {{ post.html|safe }}
+  <div id="disqus_thread"></div>
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    var disqus_config = function () {
+      this.page.url = "https://www.krisquigley.co.uk/posts/{{name}}.html"  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = name // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script')
+      s.src = 'https://krisquigleycouk.disqus.com/embed.js'
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s)
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</article>
+
+{% endblock %}
