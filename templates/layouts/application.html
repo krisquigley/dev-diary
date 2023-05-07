@@ -15,10 +15,16 @@
       rel="stylesheet"
       href="{{url_for('static',filename='dist/css/output.css')}}"
     />
-    <link rel="stylesheet" href="{{ url_for('pygments_css') }}" />
+    <link rel="stylesheet" href="{{ url_for('pygments_css') }}" async />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='node_modules/flowbite-typography/dist/typography.min.css')}}"
+    />
+    <meta
+      name="description"
+      content="Welcome to my Dev Diary! I'm documenting my journey building an AI
+      Assistant, sharing experiences in artificial intelligence. Let's
+      connect, learn, and grow together in this exciting adventure! 🚀🤖✨"
     />
     <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -43,6 +49,9 @@
         {% block content %}{% endblock %}
       </div>
     </main>
-    <script src="{{url_for('static',filename='node_modules/flowbite/dist/flowbite.min.js')}}"></script>
+    <script
+      src="{{url_for('static',filename='node_modules/flowbite/dist/flowbite.min.js')}}"
+      async
+    ></script>
   </body>
 </html>
