@@ -41,22 +41,10 @@
       Assistant, sharing experiences in artificial intelligence. Let's
       connect, learn, and grow together in this exciting adventure! 🚀🤖✨"
     />
-    <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (
-        localStorage.getItem('color-theme') === 'dark' ||
-        (!('color-theme' in localStorage) &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    </script>
     {% endblock %}
   </head>
 
-  <body>
+  <body class="dark">
     {% with title = self.title() %} {% include 'shared/_nav.html' %} {% endwith
     %}
     <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
