@@ -4,7 +4,7 @@ intro: In the first part of this series, I am going to be talking about how to s
 date: 2017-01-22
 tags: rails, ruby, docker
 type: Article
-project: Rails
+project:
 ---
 
 ### Why use Docker?

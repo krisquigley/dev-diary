@@ -1,60 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-gray-900">
-  <head>
-    {% block head %}
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-W825QDQ9FQ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
 
-      gtag('config', 'G-W825QDQ9FQ');
-    </script>
+<head>
+  {% block head %}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W825QDQ9FQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akal1k0 {% block title %}{% endblock %}</title>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>"
-    />
-    <meta charset="utf-8" />
-    <link
-      rel="stylesheet"
-      href="{{url_for('static',filename='dist/css/output.css')}}"
-    />
-    <link rel="stylesheet" href="{{ url_for('pygments_css') }}" async />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='node_modules/flowbite-typography/dist/typography.min.css')}}"
-    />
-    <meta
-      name="description"
-      content="Welcome to my Dev Diary! I'm documenting my journey building an AI
+    gtag('config', 'G-W825QDQ9FQ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akal1k0 {% block title %}{% endblock %}</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}" />
+  <link rel="stylesheet" href="{{ url_for('pygments_css') }}" async />
+  <link rel="stylesheet"
+    href="{{ url_for('static', filename='node_modules/flowbite-typography/dist/typography.min.css')}}" />
+  <meta name="description" content="Welcome to my Dev Diary! I'm documenting my journey building an AI
       Assistant, sharing experiences in artificial intelligence. Let's
-      connect, learn, and grow together in this exciting adventure! 🚀🤖✨"
-    />
-    {% endblock %}
-  </head>
+      connect, learn, and grow together in this exciting adventure! 🚀🤖✨" />
+  {% endblock %}
+</head>
 
-  <body class="dark">
-    {% with title = self.title() %} {% include 'shared/_nav.html' %} {% endwith
-    %}
-    <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
-      <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
-        {% block content %}{% endblock %}
-      </div>
-    </main>
-    <script
-      src="{{url_for('static',filename='node_modules/flowbite/dist/flowbite.min.js')}}"
-      async
-    ></script>
-  </body>
+<body class="dark">
+  {% with title = self.title() %} {% include 'shared/_nav.html' %} {% endwith
+  %}
+  <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
+    <div class="px-4 mx-auto max-w-screen-xl">
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+  <script src="{{url_for('static',filename='node_modules/flowbite/dist/flowbite.min.js')}}" async></script>
+</body>
+
 </html>

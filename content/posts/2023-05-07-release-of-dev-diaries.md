@@ -2,7 +2,7 @@
 title: 'Breathing New Life into the Dev Blog: Exciting Projects Ahead'
 intro: Hello everyone, and welcome back to the Dev Blog! I am thrilled to announce that we have not only brought back the blog, but we have also managed to restore all the old posts, ensuring that the knowledge and insights shared over the years remain accessible to all.
 date: 2023-05-07
-tags: ai, python, projects, dev diaries, arduino, reinforced learning
+tags: ai, python, projects, dev diaries, arduino, ratanagiri, reinforced learning
 type: Diary
 project:
 ---

@@ -4,7 +4,7 @@ intro: Don't get me wrong, I think the asset pipeline is great, it allows you to
 date: 2017-02-17
 tags: rails, ruby, webpack, asset pipeline, sprockets
 type: Article
-project: Rails
+project:
 ---
 
 Other than Rails devs, no one else uses sprockets as far as I'm aware, and so it is a very small ecosystem used by a small subset of devs. Therefore, if we want to get these libraries working in Rails, then we either have to port them to sprockets and maintain them ourselves, or hope that someone else within the community will do it for us.
