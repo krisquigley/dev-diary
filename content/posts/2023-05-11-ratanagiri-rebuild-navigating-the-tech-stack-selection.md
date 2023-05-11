@@ -7,11 +7,11 @@ type: Diary
 project: ratanagiri
 ---
 
-Hello, fellow developers! Today, I'm thrilled to share some insights from our early-stage journey on a project that [Ben Harrison](http://benmharrison.com/) and I have embarked on: the rebuild of Ratanagiri.
+**Hello, fellow developers! Today, I'm thrilled to share some insights from our early-stage journey on a project that [Ben Harrison](http://benmharrison.com/) and I have embarked on: the rebuild of Ratanagiri.**
 
-The Ratanagiri project is quite special to us. It's not just about creating a site; it's about building a platform that serves the Buddhist community, resonates with their beliefs, and brings them closer together.
+**The Ratanagiri project is quite special to us. It's not just about creating a site; it's about building a platform that serves the Buddhist community, resonates with their beliefs, and brings them closer together.**
 
-In these early days, one of our main tasks is the selection of the right technology stack. We have three potential stacks in mind, each with its own set of benefits and challenges:
+**In these early days, one of our main tasks is the selection of the right technology stack. We have three potential stacks in mind, each with its own set of benefits and challenges:**
 
 **Stack A:**
 
@@ -32,13 +32,13 @@ In these early days, one of our main tasks is the selection of the right technol
 ---
 
 💡
-If you're wondering what exactly Ratanagiri is, or why we've undertaken the task of rebuilding it, let me provide a bit of context.
+_If you're wondering what exactly Ratanagiri is, or why we've undertaken the task of rebuilding it, let me provide a bit of context._
 
-Ratanagiri is more than just a website; it's a digital representation of the Aruna Ratanagiri, a Buddhist Monastery located on the border of England and Scotland. It serves as an online hub for the monastery's community, offering resources, facilitating communication, and providing spiritual teachings.
+_Ratanagiri is more than just a website; it's a digital representation of the Aruna Ratanagiri, a Buddhist Monastery located on the border of England and Scotland. It serves as an online hub for the monastery's community, offering resources, facilitating communication, and providing spiritual teachings._
 
-However, like any technology, it must evolve to remain relevant and effective. Our rebuild aims to infuse new life into the platform, equipping it with modern technologies and making it more accessible, faster, and more intuitive.
+_However, like any technology, it must evolve to remain relevant and effective. Our rebuild aims to infuse new life into the platform, equipping it with modern technologies and making it more accessible, faster, and more intuitive._
 
-For a more detailed background, related posts, and to follow our journey from the start, do visit the [Ratanagiri Project Page](/projects/ratanagiri.html). Your feedback and suggestions on our project would be greatly appreciated!
+_For a more detailed background, related posts, and to follow our journey from the start, do visit the [Ratanagiri Project Page](/projects/ratanagiri.html). Your feedback and suggestions on our project would be greatly appreciated!_
 
 ---
 

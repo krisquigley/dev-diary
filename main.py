@@ -43,7 +43,7 @@ def project(slug):
     project_posts.sort(key=lambda item: item["date"], reverse=True)
     content = flatpages.get_or_404(path)
     return render_template(
-        "projects/show.html", project=content, project_posts=project_posts
+        "projects/show.html", project=content, project_posts=project_posts, name=slug
     )
 
 
