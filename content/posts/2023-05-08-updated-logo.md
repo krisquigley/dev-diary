@@ -12,7 +12,7 @@ Hello everyone, and welcome back to the Dev Blog. Today's update is going to be 
 Not Much of an Update Today, I'm Afraid
 Some days are just like that—you don't make huge leaps forward, but you still accomplish necessary tasks. Today was one of those days, where I primarily focused on refining aspects of the site and handling some unrelated issues.
 
-![image](/static/images/logo.png)
+![image](/static/images/logo.webp)
 
 Logo Design and Site Fixes
 A good portion of my time today was dedicated to designing a new logo for the site. While this might seem like a minor task, it's essential to have a visually appealing and recognizable brand identity. Additionally, I've been working on fixing some bits and bobs on the site, ensuring a seamless user experience and ironing out any lingering bugs.
