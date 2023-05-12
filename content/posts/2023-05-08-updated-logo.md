@@ -3,7 +3,7 @@ title: 'A Day of Maintenance and Improvements: Logo Design and Site Fixes'
 intro: Hello everyone, and welcome back to the Dev Blog. Today's update is going to be a bit shorter than usual, as I've mostly been focusing on smaller tasks and fixes rather than making significant progress on my projects.
 date: 2023-05-08
 tags: dev diaries, hazel, ai assistant
-type: Diary
+type: Diary Entry
 meta_description: "Explore today's Dev Blog update: site refinement, logo design, and balancing personal life with development tasks. Stay tuned for the next update on our AI Assistant project."
 project:
 ---
