@@ -4,6 +4,7 @@ intro: Hello everyone, and welcome back to the Dev Blog. Today's update is going
 date: 2023-05-08
 tags: dev diaries, hazel, ai assistant
 type: Diary
+meta_description: "Explore today's Dev Blog update: site refinement, logo design, and balancing personal life with development tasks. Stay tuned for the next update on our AI Assistant project."
 project:
 ---
 

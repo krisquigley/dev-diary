@@ -4,6 +4,7 @@ intro: Don't get me wrong, I think the asset pipeline is great, it allows you to
 date: 2017-02-17
 tags: rails, ruby, webpack, asset pipeline, sprockets
 type: Article
+meta_description: Discover the process of replacing Rails' asset pipeline with Webpack 2 for better ES6 and React integration. Learn about Webpack's advantages, why it's a popular choice, and how it's becoming the preferred front-end asset bundler.
 project:
 ---
 

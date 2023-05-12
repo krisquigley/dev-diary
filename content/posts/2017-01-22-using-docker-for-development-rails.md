@@ -4,6 +4,7 @@ intro: In the first part of this series, I am going to be talking about how to s
 date: 2017-01-22
 tags: rails, ruby, docker
 type: Article
+meta_description: Discover the pivotal role of the agricultural sector in mitigating climate change. Learn how modern practices, advanced tech, and global policies can shape a sustainable future.
 project:
 ---
 

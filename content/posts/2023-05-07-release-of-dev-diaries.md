@@ -4,6 +4,7 @@ intro: Hello everyone, and welcome back to the Dev Blog! I am thrilled to announ
 date: 2023-05-07
 tags: ai, python, projects, dev diaries, arduino, ratanagiri, reinforced learning
 type: Diary
+meta_description: Welcome back to the Dev Blog, now featuring new projects in AI, machine learning, web development, and more. Learn about Py Mouse, a cat toy powered by reinforcement learning, Hazel, an AI assistant for digital life, Digital Buddha, a Buddhism-focused chatbot, and the Aruna Ratanagiri website revamp.
 project:
 ---
 

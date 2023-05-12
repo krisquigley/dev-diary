@@ -5,6 +5,7 @@ type: 'Content-Driven Website'
 intro: 'Community website for the Ratanagiri Buddhist monastery in the North East of England.'
 date: 2014-10-06
 website: 'https://ratanagiri.org.uk'
+meta_description: Explore the evolution of Aruna Ratanagiri Monastery's digital presence, from its 2014 launch to future plans for a modern, accessible, and high-performance site.
 image: '/static/images/ratanagiri.jpeg'
 ---
 

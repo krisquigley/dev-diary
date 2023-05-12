@@ -4,6 +4,7 @@ intro: I myself, often forget how to do all the Ajax trickery in Rails and Googl
 date: 2015-12-08
 tags: rails, ruby, background worker
 type: Article
+meta_description: Dive into file generation polling in e-commerce. Discover how to streamline CSV generation and apply it to PDF. Ideal for developers seeking scalability.
 project:
 ---
 

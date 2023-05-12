@@ -27,7 +27,8 @@
       {% if post.project %} {% for project in
       projects|selectattr('meta.slug','equalto', post.project) %}
       <a class="w-7 h-7 rounded-full overflow-hidden relative" href="{{url_for('project', slug=project.meta.slug)}}">
-        <img class="w-auto max-w-none absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] h-7"
+        <img loading="lazy"
+          class="w-auto max-w-none absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] h-7"
           src="{{ project.meta.image }}" alt="{{ project.meta.name }}" />
       </a>
       <a class="font-medium dark:text-white hover:underline" href="{{url_for('project', slug=project.meta.slug)}}">

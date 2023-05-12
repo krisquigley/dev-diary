@@ -3,10 +3,6 @@
 
 <head>
   {% block head %}
-  <!-- Google tag (gtag.js) -->
-  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-W825QDQ9FQ"></script>
-  <script defer src="{{ url_for('static', filename='src/analytics.js')}}"></script>
-
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,9 +14,7 @@
   <link defer rel="stylesheet" href="{{ url_for('pygments_css') }}" async />
   <link async rel="stylesheet"
     href="{{ url_for('static', filename='node_modules/flowbite-typography/dist/typography.min.css')}}" />
-  <meta name="description" content="Welcome to my Dev Diary! I'm documenting my journey building an AI
-      Assistant, sharing experiences in artificial intelligence. Let's
-      connect, learn, and grow together in this exciting adventure! 🚀🤖✨" />
+  <meta name="description" content="{% block meta_description %}{% endblock %}">
   {% endblock %}
 </head>
 
