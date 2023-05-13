@@ -22,7 +22,15 @@ def posts():
 def post(year, month, day, name):
     path = f"{POST_DIR}/{year}-{month}-{day}-{name}"
     content = flatpages.get_or_404(path)
-    return render_template("posts/show.html", post=content, name=name)
+    post_projects = [
+        p
+        for p in flatpages
+        if p.path.startswith(PROJECT_DIR) and p.meta["slug"] in content.meta["project"]
+    ]
+    post_projects.sort(key=lambda item: item["date"], reverse=True)
+    return render_template(
+        "posts/show.html", post=content, name=name, projects=post_projects
+    )
 
 
 @app.route("/projects/index.html")
