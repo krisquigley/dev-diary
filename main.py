@@ -1,5 +1,5 @@
 import sys
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
 from config.settings import *
@@ -66,6 +66,11 @@ def about():
 @app.route("/pygments.css")
 def pygments_css():
     return pygments_style_defs("github-dark"), 200, {"Content-Type": "text/css"}
+
+
+@app.route("/robots.txt")
+def robots():
+    return send_from_directory("static", "robots.txt")
 
 
 if __name__ == "__main__":
