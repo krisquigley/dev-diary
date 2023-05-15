@@ -63,6 +63,11 @@ def about():
     return render_template("about.html")
 
 
+@app.route("/node_modules/<path:filepath>")
+def node_modules(filepath):
+    return send_from_directory("node_modules", filepath)
+
+
 @app.route("/pygments.css")
 def pygments_css():
     return pygments_style_defs("github-dark"), 200, {"Content-Type": "text/css"}
@@ -71,6 +76,11 @@ def pygments_css():
 @app.route("/robots.txt")
 def robots():
     return send_from_directory("static", "robots.txt")
+
+
+@app.route("/_redirects")
+def redirects():
+    return send_from_directory("static", "_redirects")
 
 
 if __name__ == "__main__":
