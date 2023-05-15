@@ -73,14 +73,19 @@ def pygments_css():
     return pygments_style_defs("github-dark"), 200, {"Content-Type": "text/css"}
 
 
-@app.route("/robots.txt")
-def robots():
-    return send_from_directory("static", "robots.txt")
-
-
 @app.route("/_redirects")
 def redirects():
-    return send_from_directory("static", "_redirects")
+    return send_from_directory("public", "_redirects")
+
+
+@app.route("/robots.txt")
+def robots():
+    return send_from_directory("public", "robots.txt")
+
+
+@app.route("/<path:filepath>")
+def public(filepath):
+    return send_from_directory("public", filepath)
 
 
 if __name__ == "__main__":
