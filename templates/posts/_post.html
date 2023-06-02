@@ -24,17 +24,17 @@
   </p>
   <div class="flex justify-between items-center">
     <div class="flex items-center space-x-4">
-      {% if post.project %} {% for project in
-      projects|selectattr('meta.slug','equalto', post.project) %}
-      <a class="w-7 h-7 rounded-full overflow-hidden relative" href="{{url_for('project', slug=project.meta.slug)}}">
-        <img loading="lazy"
-          class="w-auto max-w-none absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] h-7"
-          src="{{ project.meta.image }}" alt="{{ project.meta.name }}" />
-      </a>
-      <a class="font-medium dark:text-white hover:underline" href="{{url_for('project', slug=project.meta.slug)}}">
-        {{ project.meta.name }}
-      </a>
-      {% endfor %} {% endif %}
+      {% if post.projects %}
+        {% for p in post.projects|split_and_strip %}
+          {% for project in projects|selectattr('meta.slug','equalto', p) %}
+          <a class="w-7 h-7 rounded-full overflow-hidden relative" title="{{ project.meta.name }}" href="{{url_for('project', slug=project.meta.slug)}}">
+            <img loading="lazy"
+              class="w-auto max-w-none absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] h-7"
+              src="{{ project.meta.image }}" alt="{{ project.meta.name }}" />
+          </a>
+          {% endfor %} 
+        {% endfor %}
+      {% endif %}
     </div>
     <a href="{{ url_for('post', year=post.path.replace('posts/', '').split('-')[0], month=post.path.split('-')[1], day=post.path.split('-')[2], name=post.path.split('/')[-1][11:]) }}"
       class="inline-flex items-center font-medium text-primary-600 dark:text-primary-400 hover:underline">

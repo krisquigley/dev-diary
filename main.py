@@ -4,7 +4,11 @@ from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
 from config.settings import *
 
+def split_and_strip(value, separator=','):
+    return [v.strip() for v in value.split(separator)]
+
 app = Flask(__name__)
+app.jinja_env.filters['split_and_strip'] = split_and_strip
 flatpages = FlatPages(app)
 freezer = Freezer(app)
 app.config.from_object(__name__)
@@ -23,14 +27,15 @@ def post(year, month, day, name):
     path = f"{POST_DIR}/{year}-{month}-{day}-{name}"
     content = flatpages.get_or_404(path)
     post_projects = []
-    if content.meta["project"]:
+    if content.meta["projects"]:
         post_projects = [
             p
             for p in flatpages
             if p.path.startswith(PROJECT_DIR)
-            and p.meta["slug"] in content.meta["project"]
+            and p.meta["slug"] in content.meta["projects"]
         ]
         post_projects.sort(key=lambda item: item["date"], reverse=True)
+        
     return render_template(
         "posts/show.html", post=content, name=name, projects=post_projects
     )
@@ -45,13 +50,14 @@ def projects():
 
 @app.route("/projects/<slug>.html")
 def project(slug):
-    path = f"{PROJECT_DIR}/{slug}"
     project_posts = [
         p
         for p in flatpages
-        if p.path.startswith(POST_DIR) and p.meta["project"] == slug
+        if p.path.startswith(POST_DIR) and p.meta["projects"] and slug in p.meta["projects"]
     ]
     project_posts.sort(key=lambda item: item["date"], reverse=True)
+
+    path = f"{PROJECT_DIR}/{slug}"
     content = flatpages.get_or_404(path)
     return render_template(
         "projects/show.html", project=content, project_posts=project_posts, name=slug
@@ -86,6 +92,15 @@ def robots():
 @app.route("/<path:filepath>")
 def public(filepath):
     return send_from_directory("public", filepath)
+
+@app.context_processor
+def utility_functions():
+    def print_in_console(message):
+        print(f"{message}")
+
+    return dict(mdebug=print_in_console)
+
+
 
 
 if __name__ == "__main__":

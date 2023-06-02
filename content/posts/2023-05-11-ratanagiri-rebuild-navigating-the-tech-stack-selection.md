@@ -5,7 +5,7 @@ date: 2023-05-11
 tags: ratanagiri, astro, nextjs, nuxtjs, strapi
 type: Diary Entry
 meta_description: Dive into the early stages of the Ratanagiri rebuild, a project aiming to serve the Buddhist community. Explore potential technology stacks and strategies for a developer-friendly, scalable, and high-performing site. Stay tuned for more updates.
-project: ratanagiri
+projects: ratanagiri
 ---
 
 **Hello, fellow developers! Today, I'm thrilled to share some insights from our early-stage journey on a project that [Ben Harrison](http://benmharrison.com/) and I have embarked on: the rebuild of Ratanagiri.**

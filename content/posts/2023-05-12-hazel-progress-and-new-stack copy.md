@@ -5,7 +5,7 @@ date: 2023-05-12
 tags: hazel, flask, django
 type: Diary Entry
 meta_description: Discover the progress of Hazel, an AI assistant project with a sustainability focus. Transitioning from Flask to Django, the new stack incorporates Python, Django, TailwindCSS, SocketIO (possibly), GPT4, and PostgreSQL. Stay tuned for GIF updates as Hazel guides users toward a sustainable lifestyle. Join our journey of creating a greener future with this innovative AI assistant.
-project: hazel
+projects: hazel
 ---
 
 Hello everyone! We're back with an update on our AI assistant project, Hazel. Whether you're a developer or simply curious about our journey, we have some exciting news to share. So, let's dive right in!

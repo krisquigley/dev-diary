@@ -5,7 +5,7 @@ date: 2015-12-08
 tags: rails, ruby, background worker
 type: Article
 meta_description: Dive into file generation polling in e-commerce. Discover how to streamline CSV generation and apply it to PDF. Ideal for developers seeking scalability.
-project:
+projects:
 ---
 
 ### Background of the Problem

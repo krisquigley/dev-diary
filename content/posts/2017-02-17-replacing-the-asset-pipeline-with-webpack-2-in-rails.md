@@ -5,7 +5,7 @@ date: 2017-02-17
 tags: rails, ruby, webpack, asset pipeline, sprockets
 type: Article
 meta_description: Discover the process of replacing Rails' asset pipeline with Webpack 2 for better ES6 and React integration. Learn about Webpack's advantages, why it's a popular choice, and how it's becoming the preferred front-end asset bundler.
-project:
+projects:
 ---
 
 Other than Rails devs, no one else uses sprockets as far as I'm aware, and so it is a very small ecosystem used by a small subset of devs. Therefore, if we want to get these libraries working in Rails, then we either have to port them to sprockets and maintain them ourselves, or hope that someone else within the community will do it for us.
